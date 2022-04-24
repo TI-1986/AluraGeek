@@ -90,6 +90,73 @@ button{
   color: var(--azul-destaque);
 }
 
+.search-box{
+  position: absolute;
+  top: 9.2%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  background: var(--input-bg);
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  padding: 0rem;
+}
+
+.search-box:hover > input{
+  width: 12.5rem;
+  padding: 2rem;
+
+}
+
+.search-box:hover > .icon{
+  background: #8bb1ee;
+}
+
+.icon:hover{
+  transform: rotate(360deg) scale(0.8);
+}
+
+.search-box input{
+ 
+  width: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: none;
+  font-size: 1.1rem;
+  transition: .5s ease;
+  line-height: 2.5rem;
+
+  color: var(--azul-destaque);
+  font-family: var(--body-font);
+  font-weight: 500;
+
+   margin-top: -2rem;
+}
+
+.search-box input::placeholder{
+  color: var(--input-placeholder);
+  margin-left: -2rem;
+  
+}
+
+
+.icon{
+  color: var(--azul-destaque);
+  float: right;
+  width: 2.5rem;
+  font-size: 1.3rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--input-bg);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition:0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/** campo de busca normal----
 .logo-busca input{
   margin-left: 10%;
   width: 24.5rem;
@@ -103,6 +170,7 @@ button{
   background-position: right;
   background-position-x: 19rem;
 }
+**/
 
 .login{
   width: 37.5rem;
@@ -180,12 +248,12 @@ button{
 .sessao-produtos{
   display:flex;
   font-family: var(--body-font);
-
   height: 19rem;
   width: 71rem;
   justify-content: space-between;
   display: flex;
   margin-bottom: 2rem;
+
 }
 
 .prod-titulo{
@@ -196,12 +264,23 @@ button{
 .prod-titulo .titulo{
   font-size: 2rem;
   font-weight: 700;
+  font-family: var(--body-font);
+
 }
 
 .mostrar-mais{
+  font-family: var(--body-font);
   font-weight: 500;
   margin-top: 1.5rem ;
   padding: .5rem;
+}
+
+.produto{
+  display:flex;
+  flex-direction: column;
+  gap: .5rem;
+
+
 }
 
 /***form contato***/
@@ -273,13 +352,14 @@ button{
 .form input::placeholder,
 .form textarea::placeholder{
     color: var(--input-placeholder);
-}
+  }
 
 .form textarea{
   font-family: var(--body-font);
   border: transparent;
   color: var(--texto-destaque);
   margin-bottom: 1.3rem;
+  resize: none;
 }
 
 .form button{
@@ -288,4 +368,14 @@ button{
   color: var(--texto-destaque);
   height: 3rem;
   width: 8rem;
+}
+ 
+
+@media (max-width: 1360px){
+  .search-box{
+    position: absolute;
+    top: 11%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+  }
 }

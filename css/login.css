@@ -145,5 +145,22 @@
 }
 
 .row h5{
-  font-family: --;
+  font-family: var(--body-font);
+  font-weight: 700;
 }
+
+.row h6{
+  font-family: var(--body-font);
+  font-weight: 500;
+}
+
+#recuperar{
+  padding: .5rem;
+}
+
+#btn{
+  display: flex;
+  padding-top: 2.5rem;
+  margin: auto 7rem;  
+}
+

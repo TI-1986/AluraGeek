@@ -76,7 +76,7 @@ button{
 .logo img{
   height:1.8rem;
   width: 2.5rem;
-}
+  }
 
 .logo p{
   font-size: 1.6rem;
@@ -293,6 +293,7 @@ button{
   padding: 4rem;
 }
 
+
 .referencia{
   display: flex;
   width: 12.5rem;
@@ -300,23 +301,24 @@ button{
   font-family: var(--body-font);
 }
 
-.referencia img{
+  .referencia img{
   width: 3.5rem;
   height: 2.5rem;
 
-}
-
-.referencia p{
-  font-size: 1.5rem;
-  font-weight: 700;
+  }
+  
+  .referencia p{
   margin-top: .3rem;
-  margin-left: .37rem;
-}
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: var(--body-font);
+  }
 
-.referencia .logo-azul{
+  .referencia .logo-azul{
   margin-left: .6rem;
   color: var(--azul-destaque)
-}
+  }
+ 
  
 .links-uteis{
   line-height: 2.5rem;
@@ -369,7 +371,12 @@ button{
   height: 3rem;
   width: 8rem;
 }
- 
+
+#drop_zone {
+  border: 5px solid blue;
+  width:  200px;
+  height: 100px;
+}
 
 @media (max-width: 1360px){
   .search-box{

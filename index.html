@@ -28,8 +28,8 @@
           </a>
         </div>
         <div class="login">
-          <form target="_blanck" action="login.html">
-            <a href="login.html"><button type="submit">login</button></a>
+          <form target="_blanck" action=".pages/login.html" data-form>
+            <a href=".pages/login.html"><button type="submit">login</button></a>
           </form>
         </div>
       </nav>
@@ -52,20 +52,9 @@
           </div>
         </div>
         <section class="sessao-produtos">
+          <div class="prod-starWars" data-produto></div>
           <div class="prod-starWars">
-            <div class="produto">
-              <img src="assets\canecasw.png" alt="caneca" />
-              <p class="descricao">Produto XYZ</p>
-              <p class="preco">60,00</p>
-              <a href="produto.html">Ver Produto</a>
-            </div>
-          </div>
-          <div class="prod-starWars">
-            <div class="produto">
-              <img src="assets\legosw.png" alt="lego" />
-              <p class="descricao">Produto XYZ</p>
-              <p class="preco">60,00</p>
-              <a href="produto.html">Ver Produto</a>
+           
             </div>
           </div>
           <div class="prod-starWars">
@@ -223,7 +212,7 @@
 
       <section class="contato">
         <div class="referencia">
-          <img src="assets\logo.png" alt="logo" />
+          <img src="../assets/logo.png" alt="logo" />
           <p class="logo-azul">Alura</p>
           <p>Geek</p>
         </div>
@@ -250,4 +239,5 @@
       </section>
     </main>
   </body>
+  <script src="./js/produto-service.js"></script>
 </html>

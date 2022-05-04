@@ -1,0 +1,10 @@
+{
+  "produto":[
+    {
+      "id": "1",
+      "img":"AA36Jllkjal133116kjlaAA",
+      "preco":"60,00",
+      "descrcao": "Produto XYZ"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Produto</title>
+    <!----------css---------->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <!----------icons---------->
+    <link rel="stylesheet" href="../icons/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav">
+        <div class="logo-busca">
+          <div class="logo">
+            <img src="../assets/logo.png" alt="logo" />
+            <p class="logo-azul">Alura</p>
+            <p>Geek</p>
+          </div>
+        </div>
+        <div class="search-box">
+          <input id="busca" type="text" placeholder="O que deseja encontrar?" />
+          <a href="##" class="icon">
+            <i class="icon-search"></i>
+          </a>
+        </div>
+        <div class="menu login">
+          <form target="_blanck" action="#" data-menu>
+            <a href="#"><button type="submit">Menu Administrador</button></a>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="cadastro">
+        <h1>Adicionar Novo Produto</h1>
+        <div class="input-img login">
+          <div id="canvas" class="img">
+            Arraste para adicionar uma imagem para o produto
+          </div>
+          <p>ou</p>
+          <a href="#"><button>Procure no seu computador</button></a>
+        </div>
+        <div class="form">
+          <form action="#" class="cadProduto">
+            <input type="text" class="nome" placeholder="Nome do produto" />
+            <input type="text" class="preco" placeholder="Preço do produto" />
+            <textarea
+              type="text"
+              name="mensagem"
+              id="msg"
+              cols="30"
+              rows="10"
+              class="descricao"
+              placeholder="Descrição do produto"
+            ></textarea>
+
+            <a href="#"><button>Adicionar produto</button></a>
+          </form>
+        </div>
+      </section>
+      <section class="contato">
+        <div class="referencia">
+          <img src="../assets/logo.png" alt="logo" />
+          <p class="logo-azul">Alura</p>
+          <p>Geek</p>
+        </div>
+
+        <div class="links-uteis">
+          <a href="">Quem somos nós </a><br />
+          <a href="">Politica de Privacidade</a><br />
+          <a href="">Programa de fidelidade</a><br />
+          <a href="">Nossas lojas </a><br />
+          <a href="">Quero ser franqueado </a><br />
+          <a href="">Anuncie aqui </a><br />
+        </div>
+
+        <div class="form">
+          <h1>Fale conosco</h1>
+          <input id="name" type="text" placeholder="Nome" />
+          <textarea
+            name="mensagem"
+            id="msg"
+            cols="30"
+            rows="10"
+            placeholder="Escreva sua mensagem."
+          ></textarea>
+          <button>Enviar Mensagem</button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="../js/produto-service.js"></script>
+  <script src="../js/canvas.js"></script>
+</html>

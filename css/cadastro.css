@@ -21,23 +21,24 @@
 }
 
 #canvas{
-  width: 10rem;
-  height: 6rem;
+  width: 12rem;
+  height: 8rem;
   background-image: url('../assets/img.png');
   background-color: var(--input-bg);
   background-repeat: no-repeat;
-  background-position-x: calc(2rem*1.8) ;
-  background-position-y: calc(1rem*.7);
+  background-position-x: calc(2rem*2.4) ;
+  background-position-y: calc(1rem*1.8);
   
   color: var(--input-placeholder);
   border: dotted;
   font-size: 0.6rem;
   text-align: center;
-  padding-top: 3.5rem;
+  padding-top: 5rem;
   font-family: var(--body-font);
   font-weight: 700;
 
 }
+
 
 
 .input-img{
@@ -48,13 +49,36 @@
   width: 100%;
   height: 10rem;
   gap: 1rem;
-   
+ margin-top: 2rem;  
 }
+
+.menu{
+  width: 37.5rem;
+  display: flex;
+  justify-content: end;
+}
+
+ .bt{
+  width: 15rem;
+  height: 3.2rem;
+  background: none;
+  border: solid 1px var(--azul-destaque);
+  color: var(--azul-destaque);
+  text-transform: uppercase;
+
+}
+
+.cadProduto button.button{
+  width: 35rem;
+  height: 3rem;
+  text-transform: uppercase;
+}
+
 .cadastro{
   display: block;
  justify-content: center;
  width: 100%;
- height: 30rem;
+ height: 35rem;
  
 }
 
@@ -68,7 +92,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 38px;
   
   color: var(--texto-titulo);
@@ -79,7 +103,22 @@
   margin:  auto ;
 }
 
-textarea:hover{
-  margin-top: 0;
-  color: var(--azul-destaque)
+form.cadProduto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.cadProduto textarea{
+  width: 35rem;
+  height: 4rem;
+}
+
+.cadProduto input{
+  width: 35rem;
+  height: 2.5rem;
+}
+.btn{
+  height: 2.5rem;
 }

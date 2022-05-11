@@ -1,7 +1,7 @@
 ///////
 const listaProdutos = async () => {
   try {
-    const resposta = await fetch(`http://localhost:3000/profile`)
+    const resposta = await fetch(`http://localhost:3000/produto`)
     if (!resposta.ok) {
       throw new Error('Não foi possível listar os produtos')
     }
@@ -14,7 +14,7 @@ const listaProdutos = async () => {
 
 const criaProduto = async (nome, email) => {
   try {
-    const newClient = await fetch(`http://localhost:3000/profile`, {
+    const newClient = await fetch(`http://localhost:3000/produto`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ const criaProduto = async (nome, email) => {
 
 const removeProduto = async id => {
   try {
-    const excluir = await fetch(`http://localhost:3000/profile/${id}`, {
+    const excluir = await fetch(`http://localhost:3000/produto/${id}`, {
       method: 'DELETE'
     })
     if (!excluir.ok) {
@@ -49,7 +49,7 @@ const removeProduto = async id => {
 }
 
 const detalhaProduto = id => {
-  return fetch(`http://localhost:3000/profile/${id}`).then(resposta => {
+  return fetch(`http://localhost:3000/produto/${id}`).then(resposta => {
     if (resposta.ok) {
       return resposta.json()
     }
@@ -59,7 +59,7 @@ const detalhaProduto = id => {
 }
 
 const atualizaProduto = (id, nome, email) => {
-  return fetch(`http://localhost:3000/profile/${id}`, {
+  return fetch(`http://localhost:3000/produto/${id}`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json'
@@ -75,7 +75,7 @@ const atualizaProduto = (id, nome, email) => {
     throw new Error('Não foi possível detalhar um produto')
   })
 }
-  
+
 export const produtoService = {
   listaProdutos,
   criaProduto,

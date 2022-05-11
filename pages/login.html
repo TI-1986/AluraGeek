@@ -6,78 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alura Geek - Login</title>
 
-    <!-------styles-------->
-    <link rel="stylesheet" href="./css/reset.css" />
+    <!----------------- Styles---------------------->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/login.css" />
 
-    <!----------imports CSS----------->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-
-    <!----------imports JAVASCRIPT----------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!---------------------icons----------------------->
+    <link rel="stylesheet" href="/icons/style.css" />
   </head>
   <body>
-    <main class="principal">
-      <section class="login">
-        <div class="login-div">
-          <div class="row">
-            <div class="logo"></div>
+    <header id="header">
+      <nav id="nav">
+        <div class="logo-busca">
+          <div class="logo">
+            <img src="/assets/logo.png" alt="logo" />
+            <p class="logo-azul">Alura</p>
+            <p>Geek</p>
           </div>
-          <div class="row center">
-            <h5>Entar</h5>
-            <h6>Digite seu Usuario e Senha</h6>
-          </div>
+        </div>
+        <div class="search-box">
+          <input id="busca" type="text" placeholder="O que deseja encontrar?" />
+          <a href="##" class="icon">
+            <i class="icon-search"></i>
+          </a>
+        </div>
+        <div class="login">
+          <form
+            target="_blanck"
+            action="/pages/cadastra_produto.html"
+            data-form
+          >
+            <a href=".pages/login.html"
+              ><button type="submit">Adicionar Novo Produto</button></a
+            >
+          </form>
+        </div>
+      </nav>
+    </header>
 
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="email" id="email_input" class="validate" />
-              <label for="email_input">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="password" id="password_input" class="validate" />
-              <label for="password_input">Password</label>
-            </div>
-            <div>
-              <a href="#" id="recuperar"><b>Recuperar Senha</b></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12">
-              Você não está Logado? Digite seu usuario e senha para acessar.
-              <a href="#" target="_blank" rel="noopener noreferrer"
-                ><b>Leia Mais</b></a
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div class="row">
-              <div class="col s6">
-                <a
-                  href="cadastro.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><b>Criar Conta</b>
-                </a>
-              </div>
-              <div id="btn" class="col s6">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="waves-effect waves-light btn"
-                  >Login</a
-                >
-              </div>
-            </div>
-          </div>
+    <main class="principal">
+      <section class="acesso">
+        <div class="log">
+          <i class="icon-user"></i>
+          <h5>Entrar</h5>
+          <p>Digite seu Usuario e Senha</p>
+          <input type="email" name="email" id="email" />
+          <input type="password" name="" id="senha" />
+          <a href="" class="reload">Recuperar Senha</a>
+          <a href="" class="create">Criar Conta</a>
+        </div>
+      </section>
+      <section class="contato">
+        <div class="referencia">
+          <img src="/assets/logo.png" alt="logo" />
+          <p class="logo-azul">Alura</p>
+          <p>Geek</p>
+        </div>
+        <div class="links-uteis">
+          <a href="">Quem somos nós </a><br />
+          <a href="">Politica de Privacidade</a><br />
+          <a href="">Programa de fidelidade</a><br />
+          <a href="">Nossas lojas </a><br />
+          <a href="">Quero ser franqueado </a><br />
+          <a href="">Anuncie aqui </a><br />
+        </div>
+        <div class="form">
+          <h1>Fale conosco</h1>
+          <input id="name" type="text" placeholder="Nome" />
+          <textarea
+            name="mensagem"
+            id="msg"
+            cols="30"
+            rows="10"
+            placeholder="Escreva sua mensagem."
+          ></textarea>
+          <button>Enviar Mensagem</button>
         </div>
       </section>
     </main>
   </body>
-  <script src="./js/produto-service.js"></script>
+  <script src="/js/produto-service.js"></script>
 </html>

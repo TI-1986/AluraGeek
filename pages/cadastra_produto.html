@@ -40,15 +40,36 @@
     <main>
       <section class="cadastro">
         <h1>Adicionar Novo Produto</h1>
-        <div class="input-img">
+        <div class="inputImg">
           <div id="canvas" class="img">
-            Arraste para adicionar uma imagem para o produto
+            <p>Arraste para adicionar uma imagem para o produto</p>
+            <input
+              id="selectImg"
+              type="file"
+              class="addImg"
+              multiple
+              accept="image/*"
+            />
           </div>
           <p>ou</p>
-          <a href="#"><button class="bt">Procure no seu computador</button></a>
+          <a href="#"
+            ><button class="bt">
+              Procure no seu computador
+              <input
+                id="buttonImg"
+                type="file"
+                multiple
+                accept="image/*"
+              /></button
+          ></a>
         </div>
         <div class="form">
           <form action="#" class="cadProduto">
+            <input
+              type="text"
+              class="categoria"
+              placeholder="categoria do produto"
+            />
             <input type="text" class="nome" placeholder="Nome do produto" />
             <input type="text" class="preco" placeholder="Preço do produto" />
             <textarea
@@ -67,7 +88,7 @@
       </section>
       <section class="contato">
         <div class="referencia">
-          <img src="../assets/logo.png" alt="logo" />
+          <img src="/assets/logo.png" alt="logo" />
           <p class="logo-azul">Alura</p>
           <p>Geek</p>
         </div>
@@ -96,6 +117,6 @@
       </section>
     </main>
   </body>
-  <script src="../js/produto-service.js"></script>
+
   <script src="../js/canvas.js"></script>
 </html>

@@ -21,146 +21,40 @@
 
 
 /******divs do header******/
+#header{
+  padding: .5rem 9.6rem;
+  background-color: var(--texto-destaque);
+  height: 5rem;
+}
 
-.logo-busca{
-  margin-left: 1rem;
-  width: 37.5rem;
+#nav{
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-
-.logo{
-  display:flex;
-  align-items: center;
-}
-.logo img{
-  height:1.8rem;
-  width: 2.5rem;
-}
-
-.logo p{
-  font-size: 1.6rem;
-  font-weight: 700;
-  font-family: var(--body-font);
-
-}
-
-.logo .logo-azul{
-  margin-left: .6rem;
-  color: var(--azul-destaque);
-}
-
 .search-box{
   position: absolute;
-  top: 9.2%;
-  left: 65%;
+  top: 5.8%;
+  left: 62%;
   transform: translate(-50%, -50%);
-  background: var(--input-bg);
-  height: 2.5rem;
-  border-radius: 2.5rem;
-  padding: 0rem;
 }
 
-.search-box:hover > input{
-  width: 12.5rem;
-  padding: 2rem;
-
-}
-
-.search-box:hover > .icon{
-  background: #8bb1ee;
-}
-
-.icon:hover{
-  transform: rotate(360deg) scale(0.8);
-}
-
-.search-box input{
-  width: 0;
-  border: none;
-  outline: none;
-  padding: 0;
-  background: none;
-  font-size: 1.1rem;
-  transition: .5s ease;
-  line-height: 2.5rem;
-
-  color: var(--azul-destaque);
-  font-family: var(--body-font);
-  font-weight: 500;
-
-   margin-top: -2rem;
-}
-
-.search-box input::placeholder{
-  color: var(--input-placeholder);
-  margin-left: -2rem;
-  
-}
-
-
-.icon{
-  color: var(--azul-destaque);
-  float: right;
-  width: 2.5rem;
-  font-size: 1.3rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background: var(--input-bg);
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  transition:0.4s;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.login{
-  height: 100vh;
-  width: 100vh;
-  margin: 0 auto;
-  padding: 0;
+.acesso{
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid var(--azul-destaque);
+  border-radius: 2%;
+  background-image: linear-gradient(to bottom left, #2a7ae4, #Eaf2fd, #1433e3);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
+  margin: 2rem auto;
+
+  box-shadow: 10px 10px 5px lightblue;
 }
 
-.login-div{
-  max-width: 27rem;
-  padding: 2.5rem;
-  border: 1px solid #dddddd;
-  border-radius: .5rem;
-}
-
-.logo{
-  background: url(../assets/person.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 6rem;
-  height: 6rem;
-  margin: 0 auto;
-  border-radius: 50%;
-}
-
-.row h5{
-  font-family: var(--body-font);
-  font-weight: 700;
-}
-
-.row h6{
-  font-family: var(--body-font);
-  font-weight: 500;
-}
-
-#recuperar{
-  padding: .5rem;
-}
-
-#btn{
+.log{
   display: flex;
-  padding-top: 2.5rem;
-  margin: auto 7rem;  
-}
+  flex-direction: column;
 
+}

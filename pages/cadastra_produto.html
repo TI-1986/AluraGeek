@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/cadastro.css" />
     <!----------icons---------->
     <link rel="stylesheet" href="../icons/style.css" />
+    <link rel="stylesheet" href="dropzone.css" />
   </head>
   <body>
     <header id="header">
@@ -49,6 +50,7 @@
               class="addImg"
               multiple
               accept="image/*"
+              data-img
             />
           </div>
           <p>ou</p>
@@ -56,7 +58,7 @@
             ><button class="bt">
               Procure no seu computador
               <input
-                id="buttonImg"
+                id="selectImg"
                 type="file"
                 multiple
                 accept="image/*"
@@ -65,13 +67,26 @@
         </div>
         <div class="form">
           <form action="#" class="cadProduto">
+            <p class="imgUpload" data-imgFile></p>
+
             <input
               type="text"
               class="categoria"
               placeholder="categoria do produto"
+              data-cat
             />
-            <input type="text" class="nome" placeholder="Nome do produto" />
-            <input type="text" class="preco" placeholder="Preço do produto" />
+            <input
+              type="text"
+              class="nome"
+              placeholder="Nome do produto"
+              data-nome
+            />
+            <input
+              type="text"
+              class="preco"
+              placeholder="Preço do produto"
+              data-preco
+            />
             <textarea
               type="text"
               name="mensagem"
@@ -80,9 +95,14 @@
               rows="10"
               class="descricao"
               placeholder="Descrição do produto"
+              data-descricao
             ></textarea>
 
-            <a href="#"><button class="button">Adicionar produto</button></a>
+            <a href="#"
+              ><button type="submit" class="button">
+                Adicionar produto
+              </button></a
+            >
           </form>
         </div>
       </section>
@@ -119,4 +139,6 @@
   </body>
 
   <script src="../js/canvas.js"></script>
+  <script src="../js/controller/cadastra_produto.js"></script>
+  <script src="dropzone.js"></script>
 </html>

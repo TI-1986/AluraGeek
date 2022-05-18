@@ -24,32 +24,15 @@
             <p>Geek</p>
           </div>
         </div>
-        <div class="search-box">
-          <input id="busca" type="text" placeholder="O que deseja encontrar?" />
-          <a href="##" class="icon">
-            <i class="icon-search"></i>
-          </a>
-        </div>
-        <div class="login">
-          <form
-            target="_blanck"
-            action="/pages/cadastra_produto.html"
-            data-form
-          >
-            <a href=".pages/login.html"
-              ><button type="submit">Adicionar Novo Produto</button></a
-            >
-          </form>
-        </div>
       </nav>
     </header>
 
     <main class="principal">
       <section class="acesso">
-        <div class="log">
+        <form class="log" action="/pages/cadastra_produto.html" method="get">
           <i class="icon-user"></i>
-          <h5>Entrar</h5>
-          <p>Digite seu Usuario e Senha</p>
+          <h5>Login</h5>
+
           <input
             type="email"
             name="email"
@@ -62,9 +45,12 @@
             id="senha"
             placeholder="Digite sua senha"
           />
+          <button class="btn" type="submit" onclick="logar(); return false">
+            Entrar
+          </button>
           <a href="" class="reload">Recuperar Senha</a>
           <a href="" class="create">Criar Conta</a>
-        </div>
+        </form>
       </section>
       <section class="contato">
         <div class="referencia">
@@ -95,5 +81,5 @@
       </section>
     </main>
   </body>
-  <script src="/js/produto-service.js"></script>
+  <script src="/js/login.js"></script>
 </html>

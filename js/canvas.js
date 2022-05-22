@@ -1,14 +1,14 @@
-const droppableZoneSign = document.getElementById('canvas')
+const arrastarImg = document.getElementById('canvas')
 document.addEventListener('img', event => {
-  droppableZoneSign.classList.add('img')
+  arrastarImg.classList.add('img')
 })
 document.addEventListener('img', event => {
-  imgZoneSign.classList.remove('img')
+  imgCapturada.classList.remove('img')
 })
 document.addEventListener('img', event => {
   event.stopPropagation()
   event.preventDefault()
-  droppableZoneSign.classList.add('img')
+  arrastarImg.classList.add('img')
 
   event.dataTransfer.dropEffect = 'copy'
 })
@@ -22,6 +22,7 @@ document.addEventListener('drop', event => {
 
 const img = document.querySelectorAll('#selectImg')
 const file = document.querySelector('[data-imgFile]')
+const previaDaImagem = document.querySelector('.imagem')
 
 var imgFile = null
 
@@ -34,5 +35,8 @@ img.forEach(inputFile => {
       file.textContent = inputFile.files[0].name
       file.classList.add('show')
     }
+    view.addEventListener('loadend', function (load) {
+      previaDaImagem.src = load.target.result
+    })
   })
 })

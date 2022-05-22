@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../css/cadastro.css" />
     <!----------icons---------->
     <link rel="stylesheet" href="../icons/style.css" />
-    <link rel="stylesheet" href="dropzone.css" />
   </head>
   <body>
     <header id="header">
@@ -41,8 +40,9 @@
     <main>
       <section class="cadastro">
         <h1>Adicionar Novo Produto</h1>
+       <form action="/index.html" method="get" data-form>
         <div class="inputImg">
-          <div id="canvas" class="img">
+          <div id="canvas" class="img" required>
             <p>Arraste para adicionar uma imagem para o produto</p>
             <input
               id="selectImg"
@@ -62,30 +62,45 @@
                 type="file"
                 multiple
                 accept="image/*"
+                data-img
               /></button
           ></a>
         </div>
         <div class="form">
-          <form action="#" class="cadProduto">
-            <p class="imgUpload" data-imgFile></p>
+          <div class="cadProduto" >
+            <div>
+              <img
+                class="imagem"
+                src="/assets/img.png"
+                alt="Sua imagem"
+                width="200"
+                height="120"
+              />
+            </div>
+
+            <p class="imgUpload" data-imgFile required></p>
 
             <input
               type="text"
               class="categoria"
               placeholder="categoria do produto"
               data-cat
+              required
             />
             <input
               type="text"
               class="nome"
               placeholder="Nome do produto"
               data-nome
+              required
             />
             <input
               type="text"
               class="preco"
               placeholder="Preço do produto"
               data-preco
+              data-tipo = "preco"
+              required
             />
             <textarea
               type="text"
@@ -96,14 +111,15 @@
               class="descricao"
               placeholder="Descrição do produto"
               data-descricao
+              required
             ></textarea>
 
             <a href="#"
               ><button type="submit" class="button">
                 Adicionar produto
-              </button></a
-            >
-          </form>
+              </button></a>
+        </div>
+       </form>
         </div>
       </section>
       <section class="contato">
@@ -139,6 +155,7 @@
   </body>
 
   <script src="../js/canvas.js"></script>
-  <script src="../js/controller/cadastra_produto.js"></script>
-  <script src="dropzone.js"></script>
+  <script type="module" src="../js/mascara.js"></script>
+  <script type="module" src="../js/controller/cadastra_produto.js"></script>
+  <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
 </html>

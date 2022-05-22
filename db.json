@@ -1,11 +1,12 @@
 {
-  "produto":[
+  "produto": [
     {
-      "id": "1",
-      "img":"AA36Jllkjal133116kjlaAA",
-      "preco":"60,00",
-      "descrcao": "Produto XYZ",
-      "categoria": "StarWars"
+      "imagem": "C:\\fakepath\\ford-mustang-gt-4k.jpg",
+      "categoria": "consoles",
+      "nome": "Controle Xbox",
+      "preco": "R$ 456,00",
+      "descricao": "games",
+      "id": 1
     }
   ]
 }

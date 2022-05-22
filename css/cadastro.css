@@ -100,7 +100,7 @@
   display: block;
  justify-content: center;
  width: 100%;
- height: 45rem;
+ height: 55rem;
  
 }
 
@@ -125,7 +125,7 @@
   margin:  auto ;
 }
 
-form.cadProduto{
+div.cadProduto{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,13 +136,39 @@ form.cadProduto{
   width: 35rem;
   height: 4rem;
   border-radius: .5rem;
+  color: var(--input-placeholder);
+  font-family: var(--body-font);
+  font-weight: 700;
+  padding: 1rem 0 0 1rem
+
 }
 
 .cadProduto input{
   width: 35rem;
   height: 2.5rem;
   border-radius: .5rem;
+  font-family: var(--body-font);
+  color: var(--input-placeholder);
+  font-weight: 700;
+  padding: 0 0 0 1rem
 }
+
+.cadProduto input:hover,
+.cadProduto textarea:hover{
+  color: var(--azul-destaque);
+  border-bottom: 1px solid var(--azul-destaque);
+}
+
+
+.cadProduto input::placeholder{
+  padding: 0 ;
+}
+
+ .cadProduto textarea::placeholder{
+  padding: 0;
+
+ }
+
 
 .btn{
   height: 2.5rem;
@@ -163,9 +189,15 @@ form.cadProduto{
   display: block;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  width: 35rem;
+  width: 36rem;
   height: 2.5rem;
   border-radius: .5rem;
   border: dotted;
+  color: var(--input-placeholder);
   background-color: var(--bg-contato);
+}
+
+.imagem{
+  display: block;
+  margin-bottom: 1rem;
 }

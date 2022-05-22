@@ -1,4 +1,4 @@
-import { produtoService } from '/produto-service.js'
+import { produtoService } from '../produto-service.js'
 
 const formulario = document.querySelector('[data-form]')
 

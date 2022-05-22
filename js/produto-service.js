@@ -12,7 +12,7 @@ const listaProdutos = async () => {
   }
 }
 
-const criaProduto = async (nome, email) => {
+const criaProduto = async (img, cat, nome, preco, descricao) => {
   try {
     const newClient = await fetch(`http://localhost:3000/produto`, {
       method: 'POST',
@@ -20,8 +20,11 @@ const criaProduto = async (nome, email) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
+        imagem: img,
+        categoria: cat,
         nome: nome,
-        email: email
+        preco: preco,
+        descricao: descricao
       })
     })
     if (!newClient.ok) {
@@ -58,15 +61,18 @@ const detalhaProduto = id => {
   })
 }
 
-const atualizaProduto = (id, nome, email) => {
+const atualizaProduto = (img, cat, nome, preco, descricao) => {
   return fetch(`http://localhost:3000/produto/${id}`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json'
     },
     body: JSON.stringify({
+      imagem: img,
+      categoria: cat,
       nome: nome,
-      email: email
+      preco: preco,
+      descricao: descricao
     })
   }).then(resposta => {
     if (resposta.ok) {

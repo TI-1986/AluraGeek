@@ -1,12 +1,5 @@
 {
   "produto": [
-    {
-      "imagem": "C:\\fakepath\\ford-mustang-gt-4k.jpg",
-      "categoria": "consoles",
-      "nome": "Controle Xbox",
-      "preco": "R$ 456,00",
-      "descricao": "games",
-      "id": 1
-    }
+    
   ]
 }

@@ -20,6 +20,7 @@
 
 }
 
+
 #canvas{
   width: 12rem;
   height: 8rem;
@@ -49,6 +50,8 @@
   height: 7.5rem;
 
  }
+
+
 
  #buttonImg{
    position: relative;
@@ -167,6 +170,37 @@ div.cadProduto{
  .cadProduto textarea::placeholder{
   padding: 0;
 
+ }
+ 
+ .categoria p{
+   display: flex;
+  font-family: var(--body-font);
+  color: var(--azul-destaque);
+  font-weight: 700;
+  padding: .5rem;
+  justify-content: center;
+
+ }
+
+ #cat {
+  width: 36rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+  padding: 0 0 0 1rem;
+
+  font-family: var(--body-font);
+  color: var(--input-placeholder);
+  font-weight: 700;
+
+  border: none;
+  margin-bottom: 1rem;
+
+ }
+
+ #cat option{
+  color: var(--azul-destaque);
+  font-family: var(--body-font);
+  font-weight: 500;
  }
 
 

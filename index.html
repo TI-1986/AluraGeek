@@ -43,69 +43,15 @@
         </div>
       </section>
       <section class="geral-prods">
-        <div class="prod-titulo">
-          <div class="titulo">
-            <p>Star Wars</p>
-          </div>
+        <div class="prod-titulo" data-titulo>
           <div class="mostrar-mais">
-            <p>Ver Tudo <img src="assets\Vector.png" alt="seta" /></p>
+            <a href="/pages/produto.html"
+              >Ver Tudo <img src="/assets/Vector.png" alt="seta"
+            /></a>
           </div>
         </div>
-
-        <section class="sessao-produtos">
-          <div class="categoria" data-produto>
-            <div class="prod-starWars">
-              <div class="produto">
-                <img src="assets/canecasw.png" alt="legosw" />
-                <p class="descricao">Produto XYZ</p>
-                <p class="preco">60,00</p>
-                <a href="produto.html">Ver Produto</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="categoria" data-produto>
-            <div class="prod-starWars">
-              <div class="produto">
-                <img src="assets/legosw.png" alt="legosw" />
-                <p class="descricao">Produto XYZ</p>
-                <p class="preco">60,00</p>
-                <a href="produto.html">Ver Produto</a>
-              </div>
-            </div>
-          </div>
-          <div class="prod-starWars">
-            <div class="produto">
-              <img src="assets\yoda.png" alt="yoda" />
-              <p class="descricao">Produto XYZ</p>
-              <p class="preco">60,00</p>
-              <a href="produto.html">Ver Produto</a>
-            </div>
-          </div>
-          <div class="prod-starWars">
-            <div class="produto">
-              <img src="assets\storn.png" alt="storn" />
-              <p class="descricao">Produto XYZ</p>
-              <p class="preco">60,00</p>
-              <a href="produto.html">Ver Produto</a>
-            </div>
-          </div>
-          <div class="prod-starWars">
-            <div class="produto">
-              <img src="assets\babyyoda.png" alt="baby yoda" />
-              <p class="descricao">Produto XYZ</p>
-              <p class="preco">60,00</p>
-              <a href="produto.html">Ver Produto</a>
-            </div>
-          </div>
-          <div class="prod-starWars">
-            <div class="produto">
-              <img src="assets\mandalorian.png" alt="mandalorian" />
-              <p class="descricao">Produto XYZ</p>
-              <p class="preco">60,00</p>
-              <a href="produto.html">Ver Produto</a>
-            </div>
-          </div>
+        <section class="sessao-produtos" data-produto>
+          <!-- entrar JS -->
         </section>
 
         <div class="prod-titulo">
@@ -256,6 +202,5 @@
       </section>
     </main>
   </body>
-  <script src="./js/produto-service.js"></script>
-  <script src="./js/canvas.js"></script>
+  <script type="module" src="./js/controller/listar_produto.js"></script>
 </html>

@@ -1,4 +1,3 @@
-///////
 const listaProdutos = async () => {
   try {
     const resposta = await fetch(`http://localhost:3000/produto`)
@@ -14,7 +13,7 @@ const listaProdutos = async () => {
 
 const criaProduto = async (img, cat, nome, preco, descricao) => {
   try {
-    const newClient = await fetch(`http://localhost:3000/produto`, {
+    const newProduto = await fetch(`http://localhost:3000/produto`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -27,10 +26,10 @@ const criaProduto = async (img, cat, nome, preco, descricao) => {
         descricao: descricao
       })
     })
-    if (!newClient.ok) {
+    if (!newProduto.ok) {
       throw new Error('Não foi possível criar um produto')
     }
-    return newClient.json()
+    return newProduto.json()
   } catch (erro) {
     console.log(erro)
     window.location.href = '../telas/erro.html'

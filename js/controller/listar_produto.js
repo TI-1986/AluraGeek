@@ -1,0 +1,57 @@
+import { produtoService } from '../produto-service.js'
+
+const criaNovaLinha = (categoria, img, nome, preco, id) => {
+  const linhaNovoProduto = document.createElement('div')
+  linhaNovoProduto.classList.add('produto')
+
+  const conteudo = `
+  
+    <img src="${img}" alt="" class="img" data-imgFile/>
+    <p class="nome" data-nome>${nome}</p>
+    <p class="preco" data-preco>${preco}</p>
+    <a href="/pages/produto.html">Ver Produto</a>
+ 
+  `
+  linhaNovoProduto.innerHTML = conteudo
+  linhaNovoProduto.dataset.id = id
+  return linhaNovoProduto
+}
+
+const vitrine = document.querySelector('[data-produto]')
+
+vitrine.addEventListener('click', async evento => {
+  let ehBotaoDeDeleta =
+    evento.target.className === 'botao-simples botao-simples--excluir'
+  if (ehBotaoDeDeleta) {
+    try {
+      const linhaProduto = evento.target.closest('[data-id]')
+      let id = linhaProduto.dataset.id
+      await produtoService.removeProduto(id)
+      linhaProduto.remove()
+    } catch (erro) {
+      console.log(erro)
+      window.location.href = '../telas/erro.html'
+    }
+  }
+})
+
+const render = async () => {
+  try {
+    const listaProdutos = await produtoService.listaProdutos()
+    listaProdutos.forEach(elemento => {
+      vitrine.appendChild(
+        criaNovaLinha(
+          elemento.categoria,
+          elemento.img,
+          elemento.nome,
+          elemento.preco,
+          elemento.id
+        )
+      )
+    })
+  } catch (erro) {
+    console.log(erro)
+  }
+}
+
+render()

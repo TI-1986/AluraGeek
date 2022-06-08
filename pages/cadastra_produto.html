@@ -59,6 +59,7 @@
               Procure no seu computador
               <input
                 id="selectImg"
+                 class="addImg"
                 type="file"
                 multiple
                 accept="image/*"
@@ -79,14 +80,17 @@
             </div>
 
             <p class="imgUpload" data-imgFile required></p>
+        
+            <div class="categoria">
+              <p>Categoria</p>
+              <select name="Categoria" id="cat" class="select-cat" data-cat data-tipo="categoria" required>
+                <option value="escolha">Escolha uma Categoria</option>
+                <option class="type" value="StarWars">StarWars</option>
+                <option class="type" value="Consoles">Consoles</option>
+                <option class="type" value="Diversos">Diversos</option>
+              </select>
+            </div>
 
-            <input
-              type="text"
-              class="categoria"
-              placeholder="categoria do produto"
-              data-cat
-              required
-            />
             <input
               type="text"
               class="nome"

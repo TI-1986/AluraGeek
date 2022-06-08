@@ -4,9 +4,12 @@ const formulario = document.querySelector('[data-form]')
 
 formulario.addEventListener('submit', async evento => {
   evento.preventDefault()
+
   try {
-    const img = evento.target.querySelector('[data-img]').value
+    const img = evento.target.querySelector('.imagem').value
+
     const categoria = evento.target.querySelector('[data-cat]').value
+
     const nome = evento.target.querySelector('[data-nome]').value
 
     const preco = evento.target.querySelector('[data-preco]').value

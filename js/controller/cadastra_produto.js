@@ -6,7 +6,7 @@ formulario.addEventListener('submit', async evento => {
   evento.preventDefault()
 
   try {
-    const img = evento.target.querySelector('.imagem').value
+    const img = evento.target.querySelector('[data-img]').value
 
     const categoria = evento.target.querySelector('[data-cat]').value
 

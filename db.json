@@ -1,5 +1,28 @@
 {
   "produto": [
-    
+    {
+      "imagem": "C:\\fakepath\\controleX.png",
+      "categoria": "Consoles",
+      "nome": "Controle Xbox",
+      "preco": "R$ 454,50",
+      "descricao": "Controle branco Xbox Series S",
+      "id": 1
+    },
+    {
+      "imagem": "C:\\fakepath\\controleX.png",
+      "categoria": "Consoles",
+      "nome": "Controle Xbox",
+      "preco": "R$ 555,55",
+      "descricao": "hhh",
+      "id": 2
+    },
+    {
+      "imagem": "C:\\fakepath\\controleX.png",
+      "categoria": "Consoles",
+      "nome": "Controle Xbox",
+      "preco": "R$ 565,56",
+      "descricao": "teste 12345",
+      "id": 3
+    }
   ]
 }

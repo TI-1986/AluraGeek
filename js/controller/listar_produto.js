@@ -6,7 +6,7 @@ const criaNovaLinha = (categoria, img, nome, preco, id) => {
 
   const conteudo = `
   
-    <img src="${img}" alt="" class="img" data-imgFile/>
+    <img src="${img}" alt="" class="img" />
     <p class="nome" data-nome>${nome}</p>
     <p class="preco" data-preco>${preco}</p>
     <a href="/pages/produto.html">Ver Produto</a>

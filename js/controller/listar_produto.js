@@ -1,18 +1,19 @@
 import { produtoService } from '../produto-service.js'
 
-const criaNovaLinha = (categoria, img, nome, preco, id) => {
+const criaNovaLinha = (img, nome, preco, id) => {
   const linhaNovoProduto = document.createElement('div')
   linhaNovoProduto.classList.add('produto')
 
   const conteudo = `
   
-    <img src="${img}" alt="" class="img" />
+    <img src="/assets/${img}" alt="" class="img" />
     <p class="nome" data-nome>${nome}</p>
     <p class="preco" data-preco>${preco}</p>
-    <a href="/pages/produto.html">Ver Produto</a>
+    <a href="/pages/produto.html?id=${id}">Ver Produto</a>
  
   `
   linhaNovoProduto.innerHTML = conteudo
+  linhaNovoProduto.img = MediaSource
   linhaNovoProduto.dataset.id = id
   return linhaNovoProduto
 }
@@ -40,13 +41,7 @@ const render = async () => {
     const listaProdutos = await produtoService.listaProdutos()
     listaProdutos.forEach(elemento => {
       vitrine.appendChild(
-        criaNovaLinha(
-          elemento.categoria,
-          elemento.img,
-          elemento.nome,
-          elemento.preco,
-          elemento.id
-        )
+        criaNovaLinha(elemento.img, elemento.nome, elemento.preco, elemento.id)
       )
     })
   } catch (erro) {

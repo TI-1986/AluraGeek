@@ -1,0 +1,71 @@
+[33mcommit 83c65fe94c55d47433902e60ed7e1ba3097a6fb6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Tue Jun 14 21:49:40 2022 -0300
+
+    tebtando resolver erro da URL da imagem enviada para o Json server\fakepath\
+
+[33mcommit 6b73ce41d0efe8674d9ebba66f75bd6bb8db4635[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Wed Jun 8 20:32:38 2022 -0300
+
+    trabalhando o cadastro de produto
+
+[33mcommit d10154c38607ef2c99d83f1cf10c01b6a8ed2f3b[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Sat May 21 21:07:06 2022 -0300
+
+    gravando no db-json
+
+[33mcommit 42a8deae5749cb018a8215804872448805502c6a[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Tue May 17 21:36:58 2022 -0300
+
+    tela de cadastro drop and drag upload de imagem
+
+[33mcommit c6a376b7afc93fa369056b0ba3ae53a949981fd2[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Wed May 11 21:26:38 2022 -0300
+
+    estilo da tela de login
+
+[33mcommit c9243704339e89326904c0189cab706701b0e0cf[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Tue May 10 22:26:08 2022 -0300
+
+    criando login e tela de cad. de produto
+
+[33mcommit c1d2118e7769e76dd66bf6d02f65265094e7e5f7[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Wed May 4 22:00:51 2022 -0300
+
+    tela de cadastro do prooduto funcao captura imagem
+
+[33mcommit 3a22d972d63c6cca23860b3ffd2ac794933adb1d[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Tue May 3 21:10:24 2022 -0300
+
+    criando pagina de cadastro do produto
+
+[33mcommit 7915ba95f082e38e946160c54408a8f934858524[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Sun Apr 24 19:28:00 2022 -0300
+
+    correções na tela de login
+
+[33mcommit 8c2c9c7c816d326c2ddd705c91840e7207752606[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Sun Apr 24 14:31:23 2022 -0300
+
+    animação campo de busca do site
+
+[33mcommit f243de1a187d5a282169eedc98d2823df63f438f[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Sun Apr 24 11:53:59 2022 -0300
+
+    criando tela de login
+
+[33mcommit 0d5e4761dcaf732cf506951403ff08cfc76edea7[m
+Author: TI-1986 <tiagohanrysites@gmail.com>
+Date:   Sat Apr 23 22:36:56 2022 -0300
+
+    iniciando o 4 challenge da Alura projeto Oracle Next One!

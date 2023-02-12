@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.27.9",
-    "json-server": "^0.16.2"
+    "json-server": "^0.17.1"
   }
 }
